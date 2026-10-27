@@ -1,11 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Web Test Shadee</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Test</title>
+    <style>
+        :root {
+            --primary: #00ff88;
+            --bg: #0d1117;
+            --card: rgba(22, 27, 34, 0.9);
+            --text: #c9d1d9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--primary);
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+            border-radius: 12px;
+            padding: 30px 20px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .brand {
+            font-size: 1.5rem;
+            color: var(--primary);
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn {
+            display: inline-block;
+            width: 100%;
+            padding: 12px;
+            background: var(--primary);
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: 0.2s;
+            margin-top: 15px;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+            box-shadow: 0 0 10px var(--primary);
+        }
+    </style>
 </head>
 <body>
-    <h1>web local doang</h1>
-    <p>gugugaga test gugugagagagagaag </p>
+
+    <div class="card">
+        <div class="brand">Web Test</div>
+        <p style="color: #8b949e; font-size: 0.9rem;">Klik tombol di bawah untuk masuk.</p>
+        <a href="test.html" class="btn">start</a>
+    </div>
+
 </body>
 </html>
 
